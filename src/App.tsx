@@ -5,5 +5,7 @@
          .replace(/\b\d{1,3}-HR\b/gi, '')
         .replace(/\([^)]*MACHINES?\b[^)]*\)/gi, '')
         .replace(/\([^)]*\d+M\d+[^)]*\)/gi, '')
+        .replace(/\([^)]*MACHINES?\b[^)]*\)/gi, '')
+        .replace(/\([^)]*\d+M\d+[^)]*\)/gi, '')
          .replace(/\s{2,}/g, ' ')
          .trim();
