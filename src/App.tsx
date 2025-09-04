@@ -3,7 +3,7 @@
        let cleanedName = originalName
          .replace(/(?:ATR|TMC|P&B|QUE|ADT)-\d+[A-Z]?\s*/i, '')
          .replace(/\b\d{1,3}-HR\b/gi, '')
-+        .replace(/\([^)]*MACHINE[^)]*\)/gi, '')
-+        .replace(/\([^)]*\d+M\d+[^)]*\)/gi, '')
+        .replace(/\([^)]*MACHINES?\b[^)]*\)/gi, '')
+        .replace(/\([^)]*\d+M\d+[^)]*\)/gi, '')
          .replace(/\s{2,}/g, ' ')
          .trim();
